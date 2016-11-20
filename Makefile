@@ -25,6 +25,11 @@ install :
 	cp ee.1 /usr/share/man/man1/ee.1
 	ln -s /lib/terminfo /usr/lib/terminfo
 
+uninstall :
+	rm /usr/local/bin/ee
+	rm /usr/share/man/man1/ee.1
+	unlink /usr/lib/terminfo
+
 clean :
 	rm -f ee.o new_curse.o ee 
 
