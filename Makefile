@@ -23,6 +23,7 @@ localmake:
 install :
 	cp ee /usr/local/bin/ee
 	cp ee.1 /usr/share/man/man1/ee.1
+	ln -s /lib/terminfo /usr/lib/terminfo
 
 clean :
 	rm -f ee.o new_curse.o ee 
