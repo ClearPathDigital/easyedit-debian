@@ -10,12 +10,11 @@ Debian friendly.
 
 ## Install
 
-* Clone this repository
-* Switch to this directory
-* Run this as root
+Clone this repository, switch to this directory, run this as root:
 
     # make
     # make install
+
 
 ## Uninstall
 
@@ -28,4 +27,7 @@ Run this from the source directory as root:
 If you are like me and accustomed to using the `edit` command in FreeBSD, you may wish to override the link in Debian of `edit` to `run-mailcap`, you can do 
 that by creating an alias in your shell like this:
 
-    alias edit='ee'
+    $ alias edit='ee'
+
+
+
