@@ -22,14 +22,15 @@ localmake:
 
 install :
 	cp ee /usr/local/bin/ee
-	cp ee.1 /usr/share/man/man1/ee.1
+	gzip --keep ee.1
+	cp ee.1.gz /usr/share/man/man1/ee.1.gz
 	ln -s /lib/terminfo /usr/lib/terminfo
 
 uninstall :
 	rm /usr/local/bin/ee
-	rm /usr/share/man/man1/ee.1
+	rm /usr/share/man/man1/ee.1.gz
 	unlink /usr/lib/terminfo
 
 clean :
-	rm -f ee.o new_curse.o ee 
+	rm -f ee.o new_curse.o ee ee.1.gz
 
