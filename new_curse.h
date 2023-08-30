@@ -161,7 +161,7 @@ struct _line {
 	int number;
 	};
 
-struct _line *top_of_win;
+static struct _line *top_of_win;
 
 typedef struct WIND {
 	int SR;		/* starting row		*/
