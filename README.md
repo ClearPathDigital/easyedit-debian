@@ -10,17 +10,18 @@ Debian friendly.
 
 ## Install
 
-Clone this repository, switch to this directory, run this as root:
+### Requirements
 
-    # make
-    # make install
+	sudo apt install build-essential
 
+### Steps
 
-## Uninstall
+	make
+  sudo make install
 
-Run this from the source directory as root:
+### Uninstall
 
-    # make uninstall
+	make uninstall
  
 ## Replace
 
